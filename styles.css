@@ -1,0 +1,138 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection,
+::-moz-selection,
+::-webkit-selection {
+  background-color: #64a6e4;
+  color: #000000;
+}
+
+:focus {
+  background-color: #64a6e4;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+}
+
+main {
+    min-height: 100%;
+}
+
+button {
+  border-radius: 50px;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 5px 10px 0 #00000030;
+  min-width: 250px;
+  min-height: 75px;
+  color: #313b44;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 2px solid #64a6e4;
+  background: #fff;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #ba1ce7 0%, #64a6e4 100%);
+  color: #ffffff;
+  text-shadow: 5px 5px 0 #00000030;
+  flex-flow: column nowrap;
+  padding: 5%;
+}
+
+.hero h1 {
+  padding: 75px 0;
+}
+
+h1 {
+  font-size: 7.2rem;;
+}
+
+h2 {
+  font-size: 5.6rem;
+}
+
+h3 {
+  font-size: 4.8rem;
+}
+
+h4 {
+  font-size: 3.6rem;
+}
+
+h5 {
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+img {
+    width: 100%;
+}
+
+/* Projects */
+
+.projects {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  padding: 0 5%;
+}
+
+.projects-heading {
+  text-align: center;
+  text-decoration: underline;
+  margin: 75px 0;
+}
+
+.project {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.project img {
+}
+
+.info {
+}
+
+.description {
+  margin: 5px 0;
+}
+
+.technologies {
+  color: #bdbdbd;
+  font-style: italic;
+}
