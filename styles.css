@@ -98,8 +98,23 @@ p {
   font-size: 1.8rem;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
 img {
     width: 100%;
+}
+
+hr {
+  border: none;
+  border-top: 2px dashed #bdbdbd;
+  margin: 150px 25px;
 }
 
 /* Projects */
@@ -111,21 +126,36 @@ img {
   padding: 0 5%;
 }
 
+.project:nth-child(4) {
+  flex-direction: row-reverse;
+}
+
+.project:nth-child(8) {
+  flex-direction: row-reverse;
+}
+
 .projects-heading {
   text-align: center;
   text-decoration: underline;
-  margin: 75px 0;
+  margin: 75px 0 150px;
 }
 
 .project {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
 }
 
 .project img {
+  padding: 0 50px;
+  width: 100%;
+}
+
+.image {
+  width: 40%;
 }
 
 .info {
+  padding: 0 50px;
 }
 
 .description {
@@ -135,4 +165,20 @@ img {
 .technologies {
   color: #bdbdbd;
   font-style: italic;
+}
+
+@media only screen and (max-width: 1500px) {
+  .image {
+    width: 100%;
+  }
+
+  .info {
+    padding: 1%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .project {
+    flex-flow: row wrap;
+  }
 }
