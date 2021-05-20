@@ -32,7 +32,15 @@ main {
     min-height: 100%;
 }
 
-button {
+.projects button {
+  border-radius: 5px;
+  color: #fff;
+  background: #000;
+  border: none;
+  padding: 5px;
+}
+
+.hero button {
   border-radius: 50px;
   border: 1px solid rgb(255, 255, 255);
   box-shadow: 5px 10px 0 #00000030;
@@ -44,12 +52,12 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.hero button:hover {
   filter: brightness(.7);
   background: #fff;
 }
 
-button:focus {
+.hero button:focus {
   outline: 2px solid #64a6e4;
   background: #fff;
 }
@@ -116,14 +124,14 @@ img {
 hr {
   border: none;
   border-top: 2px dashed #bdbdbd;
-  margin: 150px 25px;
+  margin: 75px 25px;
 }
 
 /* Hero */
 
 .hero {
   min-height: 100vh;
-  background: linear-gradient(45deg, #ba1ce7 0%, #64a6e4 100%);
+  background: #66addd;
   color: #ffffff;
   text-shadow: 5px 5px 0 #00000030;
   flex-flow: column nowrap;
@@ -225,7 +233,7 @@ ul.technologies {
 
 .technologies li {
   padding: 7px 10px;
-  background: linear-gradient(45deg, #c252e0 -100%, #5095d4 200%);
+  background: linear-gradient(45deg, #984aad -80%, #6195c5 120%);
   border-radius: 5px;
   margin: 5px 8px 0 0;
   color: #fff;
@@ -237,7 +245,8 @@ ul.technologies {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(45deg, #ba1ce7 0%, #64a6e4 100%);
+  /* background: linear-gradient(45deg, #ba1ce7 0%, #64a6e4 100%); */
+  background: #66addd;
   text-align: center;
   min-height: 50vh;
 }
