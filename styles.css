@@ -32,36 +32,6 @@ main {
     min-height: 100%;
 }
 
-.projects button {
-  border-radius: 5px;
-  color: #fff;
-  background: #000;
-  border: none;
-  padding: 5px;
-}
-
-.hero button {
-  border-radius: 50px;
-  border: 1px solid rgb(255, 255, 255);
-  box-shadow: 5px 10px 0 #00000030;
-  min-width: 250px;
-  min-height: 75px;
-  color: #313b44;
-  font-size: 2rem;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.hero button:hover {
-  filter: brightness(.7);
-  background: #fff;
-}
-
-.hero button:focus {
-  outline: 2px solid #64a6e4;
-  background: #fff;
-}
-
 .flex {
   display: flex;
   justify-content: center;
@@ -101,7 +71,7 @@ p {
 a {
   font-size: 2.4rem;
   color: inherit;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 li {
@@ -142,6 +112,28 @@ hr {
   padding: 75px 0;
 }
 
+.hero button {
+  border-radius: 50px;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 5px 10px 0 #00000030;
+  min-width: 250px;
+  min-height: 75px;
+  color: #313b44;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  filter: brightness(.7);
+  background: #fff;
+}
+
+.hero button:focus {
+  outline: 2px solid #64a6e4;
+  background: #fff;
+}
+
 /* Header */
 
 header {
@@ -153,16 +145,16 @@ header {
 }
 
 nav li {
-  padding: 15px;
+  padding: 10px;
 }
 
 nav a {
-  padding: 8px 12px;
+  padding: 5px 8px;
 }
 
 nav a:hover {
   text-decoration: none;
-  background: #ffffff30;
+  background: #ffffff50;
   border-radius: 7px;
   color: #ffffff;
 }
@@ -200,6 +192,27 @@ li {
   flex-flow: row nowrap;
 }
 
+.image div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.projects button {
+  color: #ffffff;
+  background: #165a0e;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.projects button:hover {
+  background: #479e3d;
+}
+
 .project h4:hover {
   text-decoration: underline;
 }
@@ -219,11 +232,6 @@ li {
 
 .description {
   margin: 5px 0;
-}
-
-h6.technologies {
-  color: #bdbdbd;
-  font-style: italic;
 }
 
 ul.technologies {
