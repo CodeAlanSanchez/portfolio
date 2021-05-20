@@ -146,6 +146,7 @@ header {
 
 nav li {
   padding: 10px;
+  margin: 0 10px;
 }
 
 nav a {
