@@ -9,7 +9,25 @@
 </head>
 <body>
     <header>
-
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="./downloads/Alan Sanchez.pdf" download="Alan_Sanchez">Resume</a>
+                </li>
+                <li>
+                    <a href="https://github.com/CodeAlanSanchez" target="_blank" rel="noreferrer">Github</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <div class="flex hero">
@@ -20,6 +38,7 @@
         </div>
         <div id="projects" class="projects">
             <h1 class="projects-heading">Projects</h1>
+            <hr>
             <div class="project">
                 <div class="image">
                     <a href="https://food.alansanchez.dev" target="_blank" rel="noreferrer noopener">
@@ -29,11 +48,17 @@
                 <div class="info">
                     <a href="https://food.alansanchez.dev" target="_blank" rel="noreferrer noopener">
                         <h4 class="title">Food Tracker</h4>
-                        <h6 class="description">React and Express application that helps you keep track of the meals you eat 
-                            <br>throughout the day, shows information about macronutrients and calories
-                            <br>Sign up or continue as guest to start tracking!</h6>
-                        <h6 class="technologies">React, Node/Express, Redux, MongoDB, MaterialUI</h6>
                     </a>
+                    <h6 class="description">React and Express application that helps you keep track of the meals you eat 
+                        <br>throughout the day, shows information about macronutrients and calories.
+                        <br>Sign up to start tracking!</h6>
+                    <ul class="technologies">
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>Express</li>
+                        <li>MongoDB</li>
+                        <li>MaterialUI</li>
+                    </ul>
                 </div>
             </div>
             <hr>
@@ -47,7 +72,12 @@
                     <a href="https://ecom.alansanchez.dev" target="_blank" rel="noreferrer noopener">
                         <h4 class="title">E-Commerce Site</h4>
                         <h6 class="description">React and Express application that lets you buy products. <br>Shows a product page and a cart, checkout is not available.</h6>
-                        <h6 class="technologies">ReactJS, Redux, Express, MongoDB</h6>
+                        <ul class="technologies">
+                            <li>React</li>
+                            <li>Express</li>
+                            <li>Redux</li>
+                            <li>MongoDB</li>
+                        </ul>
                     </a>
                 </div>
             </div>
@@ -62,11 +92,20 @@
                     <a href="https://space.alansanchez.dev" target="_blank" rel="noreferrer noopener">
                         <h4 class="title">Space Article Hub</h4>
                         <h6 class="description">React application that you shows you articles from an api which you can read from. <br>The API is from a third-party source and may not work.</h6>
-                        <h6 class="technologies">ReactJS, Express, Redux, MongoDB</h6>
+                        <ul class="technologies">
+                            <li>React</li>
+                            <li>Redux</li>
+                        </ul>
                     </a>
                 </div>
             </div>
             <br>
+        </div>
+        <div id="contact" class="contact">
+            <div>
+                <h3>Contact Me</h3>
+                <h6>Email: realalansan@gmail.com</h6>
+            </div>
         </div>
     </main>
     <footer>
