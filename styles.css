@@ -149,6 +149,10 @@ nav li {
   margin: 0 10px;
 }
 
+nav li:nth-last-child(2) {
+  margin-left: auto;
+}
+
 nav a {
   padding: 5px 8px;
 }
