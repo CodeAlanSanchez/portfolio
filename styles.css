@@ -211,8 +211,9 @@ li {
 }
 
 .project-list button {
-  color: #ffffff;
-  background: #165a0e;
+  font-weight: 600;
+  color: #165a0e;
+  background-color: #ffffff00;
   border: none;
   padding: 7px 10px;
   border-radius: 5px;
@@ -221,7 +222,8 @@ li {
 }
 
 .project-list button:hover {
-  background: #479e3d;
+  color: #ffffff;
+  background: #165a0e;
 }
 
 .project h4:hover {
@@ -231,12 +233,6 @@ li {
 .project img {
   width: 100%;
 }
-
-/* .overlay {
-  background: #5566ee90;
-  height: 100%;
-  transition: all 0.3 ease-in-out;
-} */
 
 .info {
   padding: 0 2%;
