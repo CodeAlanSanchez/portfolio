@@ -1,34 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Alan Sanchez | Portfolio</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li>
-                    <a href="./downloads/Alan Sanchez.pdf" download="Alan_Sanchez">Resume</a>
-                </li>
-                <li>
-                    <a href="https://github.com/CodeAlanSanchez" target="_blank" rel="noreferrer">Github</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
     <main>
         <div class="flex hero">
             <h1>Hi I'm Alan,<br> A Software Engineer</h1>
@@ -38,90 +20,108 @@
         </div>
         <div id="projects" class="projects">
             <h1 class="projects-heading">Projects</h1>
-            <hr>
-            <div class="project">
-                <div class="image">
-                    <a href="https://food.alansanchez.dev" target="_blank" rel="noreferrer noopener">
-                        <img src="./img/foodtracker.png" alt="Food Tracker App">
-                    </a>
-                    <div>
-                        <a href="https://github.com/CodeAlanSanchez/food-tracker" target="_blank" rel="noreferrer noopener"><button>Github</button></a>
-                        <a href="https://food.alansanchez.dev" target="_blank" rel="noreferrer noopener"><button>Site</button></a>
+            <div class="project-list">
+                <div class="project">
+                    <div class="image">
+                        <div class="overlay">
+                            <button>Github</button>
+                            <button>Site</button>
+                        </div>
+                        <a>
+                            <img src="./img/foodtracker.png" alt="Food Tracker App">
+                        </a>
                     </div>
-                </div>
-                <div class="info">
-                    <a href="https://food.alansanchez.dev" target="_blank" rel="noreferrer noopener">
-                        <h4 class="title">Food Tracker</h4>
-                    </a>
-                    <h6 class="description">React and Express application that helps you keep track of the meals you eat 
-                        <br>throughout the day, shows information about macronutrients and calories.
-                        <br>Sign up to start tracking!</h6>
-                    <ul class="technologies">
-                        <li>React</li>
-                        <li>Redux</li>
-                        <li>Express</li>
-                        <li>MongoDB</li>
-                        <li>MaterialUI</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <div class="project">
-                <div class="image">
-                    <a href="https://ecom.alansanchez.dev" target="_blank" rel="noreferrer noopener">
-                        <img src="./img/ecom.png" alt="Food Tracker App">
-                    </a>
-                    <div>
-                        <a href="https://github.com/CodeAlanSanchez/ecom" target="_blank" rel="noreferrer noopener"><button>Github</button></a>
-                        <a href="https://ecom.alansanchez.dev" target="_blank" rel="noreferrer noopener"><button>Site</button></a>
-                    </div>
-                </div>
-                <div class="info">
-                    <a href="https://ecom.alansanchez.dev" target="_blank" rel="noreferrer noopener">
-                        <h4 class="title">E-Commerce Site</h4>
-                        <h6 class="description">React and Express application that lets you buy products. <br>Shows a product page and a cart, checkout is not available.</h6>
+                    <div class="info">
+                        <a href="https://food.alansanchez.dev" target="_blank" rel="noreferrer noopener">
+                            <h4 class="title">Food Tracker</h4>
+                        </a>
+                        <h6 class="description">Keep track of the meals you eat
+                            <br>throughout the day, see information about macronutrients and calories.
+                            <br>Sign up to start tracking!
+                        </h6>
                         <ul class="technologies">
                             <li>React</li>
+                            <li>Redux</li>
                             <li>Express</li>
-                            <li>Redux</li>
                             <li>MongoDB</li>
+                            <li>MaterialUI</li>
                         </ul>
-                    </a>
-                </div>
-            </div>
-            <hr>
-            <div class="project">
-                <div class="image">
-                    <a href="https://space.alansanchez.dev" target="_blank" rel="noreferrer noopener">
-                        <img src="./img/space.png" alt="Space Article App">
-                    </a>
-                    <div>
-                        <a href="https://github.com/CodeAlanSanchez/outer-news"target="_blank" rel="noreferrer noopener"><button>Github</button></a>
-                        <a href="https://space.alansanchez.dev"target="_blank" rel="noreferrer noopener"><button>Site</button></a>
                     </div>
                 </div>
-                <div class="info">
-                    <a href="https://space.alansanchez.dev" target="_blank" rel="noreferrer noopener">
-                        <h4 class="title">Space Article Hub</h4>
-                        <h6 class="description">React application that you shows you articles from an api which you can read from. <br>The API is from a third-party source and may not work.</h6>
-                        <ul class="technologies">
-                            <li>React</li>
-                            <li>Redux</li>
-                        </ul>
-                    </a>
+                <div class="project">
+                    <div class="image">
+                        <div class="overlay">
+                            <button>Github</button>
+                            <button>Site</button>
+                        </div>
+                        <a href="https://ecom.alansanchez.dev" target="_blank" rel="noreferrer noopener">
+                            <img src="./img/ecom.png" alt="Food Tracker App">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <a href="https://ecom.alansanchez.dev" target="_blank" rel="noreferrer noopener">
+                            <h4 class="title">E-Commerce Site</h4>
+                            <h6 class="description">E-commerce web application. <br>Shows a
+                                product page and a cart, checkout is not available.</h6>
+                            <ul class="technologies">
+                                <li>React</li>
+                                <li>Express</li>
+                                <li>Redux</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="image">
+                        <div class="overlay">
+                            <button>Github</button>
+                            <button>Site</button>
+                        </div>
+                        <a href="https://space.alansanchez.dev" target="_blank" rel="noreferrer noopener">
+                            <img src="./img/space.png" alt="Space Article App">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <a href="https://space.alansanchez.dev" target="_blank" rel="noreferrer noopener">
+                            <h4 class="title">Space Article Hub</h4>
+                            <h6 class="description">Shows articles from a third-party api which you can
+                                read from. <br><em>Note: The API does not currently work</em></h6>
+                            <ul class="technologies">
+                                <li>React</li>
+                                <li>Redux</li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="image">
+                        <div class="overlay">
+                            <button>Github</button>
+                            <button>Site</button>
+                        </div>
+                        <a href="https://space.alansanchez.dev" target="_blank" rel="noreferrer noopener">
+                            <img src="./img/space.png" alt="Space Article App">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <a href="https://space.alansanchez.dev" target="_blank" rel="noreferrer noopener">
+                            <h4 class="title">Apple Email</h4>
+                            <h6 class="description">Apple Email showing promotional content for the iPhone X
+                            <ul class="technologies">
+                                <li>HTML Email</li>
+                            </ul>
+                        </a>
+                    </div>
                 </div>
             </div>
             <br>
         </div>
-        <div id="contact" class="contact">
-            <div>
-                <h3>Contact Me</h3>
-                <h6>Email: RealAlanSan@gmail.com</h6>
-            </div>
-        </div>
     </main>
     <footer>
-        
+
     </footer>
+    <script src="./index.js"></script>
 </body>
+
 </html>
