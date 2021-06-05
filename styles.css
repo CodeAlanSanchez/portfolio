@@ -138,6 +138,11 @@ button {
   background: #fff;
 }
 
+.hero.flex h1::after {
+  content: "_";
+  animation: blinking 1s steps(2, start) infinite;
+}
+
 /* Header */
 
 header {
@@ -270,6 +275,16 @@ ul.technologies {
 .contact h3 {
   margin-bottom: 30px;
 }
+
+/* Keyframes */
+
+@keyframes blinking {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* Media queries */
 
 @media only screen and (max-width: 1500px) {
   .image {
