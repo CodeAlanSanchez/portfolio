@@ -29,7 +29,7 @@ body {
 }
 
 main {
-    min-height: 100%;
+  min-height: 100%;
 }
 
 .flex {
@@ -39,7 +39,7 @@ main {
 }
 
 h1 {
-  font-size: 7.2rem;;
+  font-size: 7.2rem;
 }
 
 h2 {
@@ -97,6 +97,10 @@ hr {
   margin: 75px 25px;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Hero */
 
 .hero {
@@ -125,7 +129,7 @@ hr {
 }
 
 .hero button:hover {
-  filter: brightness(.7);
+  filter: brightness(0.7);
   background: #fff;
 }
 
@@ -173,48 +177,50 @@ li {
   display: inline-block;
 }
 
-/* Projects */
+.projects-heading {
+  text-align: center;
+  margin: 100px 0 100px;
+}
 
-.projects {
-  display: flex;
-  flex-flow: column nowrap;
+/* project-list */
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   min-height: 100vh;
   padding: 0 5%;
   margin-bottom: 150px;
-}
-
-.project:nth-child(5) {
-  flex-direction: row-reverse;
-}
-
-.projects-heading {
-  text-align: center;
-  margin: 150px 0 0;
+  gap: 50px;
 }
 
 .project {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
 }
 
-.image div {
+.project img {
+  border: 1px solid #53535330;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.project .image div {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.projects button {
+.project-list button {
   color: #ffffff;
   background: #165a0e;
   border: none;
   padding: 7px 10px;
   border-radius: 5px;
   font-size: 2rem;
-  cursor: pointer;
   min-width: 100px;
 }
 
-.projects button:hover {
+.project-list button:hover {
   background: #479e3d;
 }
 
@@ -226,13 +232,14 @@ li {
   width: 100%;
 }
 
-.image {
-  margin: 0 50px;
-  width: 30%;
-}
+/* .overlay {
+  background: #5566ee90;
+  height: 100%;
+  transition: all 0.3 ease-in-out;
+} */
 
 .info {
-  padding: 0 50px;
+  padding: 0 2%;
 }
 
 .description {
