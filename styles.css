@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lora:wght@400;500;700&display=swap");
+
 *,
 *:before,
 *:after {
@@ -24,7 +26,7 @@ html {
 
 body {
   height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-weight: 400;
 }
 
@@ -99,6 +101,7 @@ hr {
 
 button {
   cursor: pointer;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
 /* Hero */
@@ -182,12 +185,16 @@ li {
   display: inline-block;
 }
 
-.projects-heading {
-  text-align: center;
-  margin: 100px 0 100px;
+/* project-list */
+
+#projects {
+  padding: 75px 0;
 }
 
-/* project-list */
+.projects-heading {
+  text-align: center;
+  margin: 0 0 125px;
+}
 
 .project-list {
   display: grid;
@@ -217,21 +224,22 @@ li {
 
 .project-list button {
   font-weight: 600;
-  color: #165a0e;
+  color: #27971a;
   background-color: #ffffff00;
   border: none;
   padding: 7px 10px;
   border-radius: 5px;
   font-size: 2rem;
   min-width: 100px;
+  transition: background-color 0.5s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .project-list button:hover {
   color: #ffffff;
-  background: #165a0e;
+  background: #27971a;
 }
 
-.project h4:hover {
+.project a:hover h4 {
   text-decoration: underline;
 }
 
