@@ -106,6 +106,13 @@ button {
   font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
+.hide {
+  visibility: hidden;
+  display: none;
+  position: absolute;
+  width: 0px;
+}
+
 /* Hero */
 
 .hero {
@@ -212,7 +219,6 @@ li {
   color: #00aaee;
   padding: 7px 10px;
   margin: 0 25px;
-  border-radius: 5px;
   transition: background-color 0.5s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
@@ -230,13 +236,14 @@ li {
 }
 
 .project {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
 }
 
 .project img {
   border: 1px solid #53535330;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   width: 100%;
 }
 
