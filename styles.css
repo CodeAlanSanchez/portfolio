@@ -229,7 +229,7 @@ li {
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   min-height: 80vh;
   padding: 0 5%;
   gap: 50px;
