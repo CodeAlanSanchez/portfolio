@@ -1,39 +1,37 @@
 
 let projects = $("div.project");
 
-let buttons = document.getElementsByClassName("button-filter");
+let buttons = $(".button-filter");
 
-let projectsToHide = [];
+let projectsToShow = [];
 
 const filter = (word) => {
     for (let i = 0; i < projects.length; i++) {
-        projects[i].classList.remove("hide");
         if (word === "all") {
+            projectsToShow.push(i);
             continue;
         }
         const liList = projects[i].children[1].children[1].children;
         let tags = [];
         for (let j = 0; j < liList.length; j++) {
-            console.log(liList[j].textContent.toLowerCase());
             tags.push(liList[j].textContent.toLowerCase());
         }
-        if (!tags.includes(word)) {
-            projectsToHide.push(i);
+        if (tags.includes(word)) {
+            projectsToShow.push(i);
         }
     }
 
-    hide(projectsToHide);
-    projectsToHide = [];
+    $(".project-list").empty();
+    show(projectsToShow);
+    projectsToShow = [];
 }
 
-const hide = (projectsToHide) => {
-    for (let i = 0; i < projectsToHide.length; i++) {
-        console.log("hiding");
-        projects[projectsToHide[i]].classList.add("hide");
+const show = (projectsToHide) => {
+        for (let i = 0; i < projectsToHide.length; i++) {
+            $(".project-list").append(projects[projectsToHide[i]])
+        }
     }
-}
 
 for (let index = 0; index < buttons.length; index++) {
     buttons[index].addEventListener("click", () => filter(buttons[index].textContent.toLowerCase()));
 }
-
