@@ -229,7 +229,7 @@ li {
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   min-height: 80vh;
   padding: 0 5%;
   gap: 50px;
@@ -243,7 +243,6 @@ li {
 
 .project img {
   border: 1px solid #53535330;
-  /* border-radius: 10px; */
   width: 100%;
 }
 
