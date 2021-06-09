@@ -26,9 +26,9 @@ const filter = (word) => {
     projectsToShow = [];
 }
 
-const show = (projectsToHide) => {
-        for (let i = 0; i < projectsToHide.length; i++) {
-            $(".project-list").append(projects[projectsToHide[i]])
+const show = (projectsToShow) => {
+        for (let i = 0; i < projectsToShow.length; i++) {
+            $(".project-list").append(projects[projectsToShow[i]])
         }
     }
 
