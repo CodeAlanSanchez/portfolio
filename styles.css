@@ -293,10 +293,11 @@ ul.technologies {
 
 .technologies li {
   padding: 7px 10px;
-  background: linear-gradient(45deg, #984aad -80%, #6195c5 120%);
+  /* background: linear-gradient(45deg, #984aad -80%, #4ca1da 120%); */
+  border: #4ca1da 2px solid;
   border-radius: 5px;
   margin: 5px 8px 0 0;
-  color: #fff;
+  color: #4ca1da;
 }
 
 /* Contact */
