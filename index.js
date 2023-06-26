@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     let projects = $("div.project");
 
     let buttons = $(".button-filter");
