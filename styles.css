@@ -181,6 +181,47 @@ button.resume-button {
   animation: blinking 1s steps(2, start) infinite;
 }
 
+button.info-button {
+  position: relative;
+  border-radius: 50%;
+  padding: 2.7rem 2.7rem;
+  font-size: 3rem;
+  aspect-ratio: 1;
+  height: 90%;
+}
+
+.info-text {
+  position: relative;
+  top: 3rem;
+  font-weight: 500;
+  font-size: 3rem;
+  text-shadow: 2px 2px 0 #00000030;
+  margin-left: 2rem;
+}
+
+.info-button:after {
+  content: "↑ Contact info";
+  position: absolute;
+  margin-top: 9rem;
+  margin-left: -7rem;
+  z-index: 3;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 0 #00000030;
+  font-weight: 500;
+}
+
+.resume-text {
+  font-weight: 500;
+  font-size: 3rem;
+  text-shadow: 2px 2px 0 #00000030;
+  margin-left: 2rem;
+}
+
+.resume-text:hover {
+  cursor: default;
+}
+
 @media only screen and (min-width: 769px) {
   .hero-buttons {
     gap: 7rem;
