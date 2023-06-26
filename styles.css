@@ -5,6 +5,7 @@
   --blue: var(--darker-blue);
   --darker-blue: #00aaff;
   --dark-blue: var(--darker-blue);
+  --info-text: #ffffff;
 
   --response: cubic-bezier(.1, .5, .3, 1);
 }
@@ -138,9 +139,10 @@ button {
 
 .hero-buttons {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   align-items: center;
   gap: 5rem;
+  width: 90%;
   justify-content: space-between;
 }
 
@@ -161,8 +163,8 @@ button {
 
 button.resume-button {
   border-radius: 50%;
-  padding: 3rem 3rem;
-  font-size: 3rem;
+  padding: 2.1rem 2.1rem;
+  font-size: 2rem;
   aspect-ratio: 1;
   height: 100%;
 }
@@ -184,8 +186,8 @@ button.resume-button {
 button.info-button {
   position: relative;
   border-radius: 50%;
-  padding: 2.7rem 2.7rem;
-  font-size: 3rem;
+  padding: 1.7rem 1.7rem;
+  font-size: 2rem;
   aspect-ratio: 1;
   height: 90%;
 }
@@ -194,38 +196,73 @@ button.info-button {
   position: relative;
   top: 3rem;
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 2rem;
   text-shadow: 2px 2px 0 #00000030;
-  margin-left: 2rem;
 }
 
 .info-button:after {
+  transition: color 250ms var(--response);
   content: "↑ Contact info";
   position: absolute;
-  margin-top: 9rem;
-  margin-left: -7rem;
+  margin-top: 7.5rem;
+  margin-left: -4.8rem;
   z-index: 3;
-  font-size: 3rem;
-  color: white;
-  text-shadow: 2px 2px 0 #00000030;
+  font-size: 2rem;
   font-weight: 500;
+  color: #00000050;
 }
 
 .resume-text {
   font-weight: 500;
-  font-size: 3rem;
-  text-shadow: 2px 2px 0 #00000030;
-  margin-left: 2rem;
+  font-size: 2rem;
+  text-shadow: none;
+  margin-left: 1rem;
+  color: #00000050;
 }
 
 .resume-text:hover {
   cursor: default;
 }
 
+.hero-buttons *:nth-child(3) {
+  order: 3;
+}
+
+button.project-button {
+  padding: 20px 30px;
+}
+
 @media only screen and (min-width: 769px) {
   .hero-buttons {
     gap: 7rem;
+    width: 40rem;
     flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  button.project-button {
+    padding: 30px 40px;
+  }
+
+  button.info-button, button.info-button:after, button.resume-button, .resume-text {
+    font-size: 3rem;
+  }
+
+  button.info-button:after {
+    margin-top: 10rem;
+    margin-left: -7rem;
+  }
+
+  button.info-button {
+    padding: 2.7rem;
+  }
+
+  button.resume-button {
+    padding: 3rem;
+  }
+
+  .hero-buttons *:nth-child(3) {
+    order: 3;
   }
 }
 
