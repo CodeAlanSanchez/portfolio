@@ -35,7 +35,7 @@ html {
 }
 
 body {
-    height: 100vh;
+    height: 100lvh;
     font-family: "Rubik", Arial, sans-serif;
     font-weight: 400;
 }
@@ -125,7 +125,7 @@ button {
 /* Hero */
 
 .hero {
-    min-height: 100vh;
+    min-height: 100lvh;
     background: var(--darker-blue);
     color: #ffffff;
     text-shadow: 5px 5px 0 #00000030;
@@ -400,9 +400,9 @@ li {
 .project-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    min-height: 80vh;
-    padding: 0 5%;
+    min-height: 80lvh;
     gap: 50px;
+    padding: 0 1%;
 }
 
 .project {
@@ -456,7 +456,7 @@ li {
 }
 
 .info {
-    padding: 0 2%;
+    padding: 0;
 }
 
 .description {
@@ -549,10 +549,6 @@ ul.technologies {
     .image {
         width: 100%;
     }
-
-    .info {
-        padding: 1%;
-    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -567,7 +563,7 @@ ul.technologies {
 
     .project .image {
         padding: 0;
-        margin: 0 0 25px;
+        margin: 0;
     }
 
     .project h6 {
